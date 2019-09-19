@@ -1,0 +1,30 @@
+<div>
+    <br>
+    <div fxLayout="row" fxLayoutAlign="center center" class="content">
+        <mat-card class="card" >
+          <mat-card-title fxLayoutAlign="center" fxLayout.gt-xs="row" fxLayout.xs="column">
+            <h3>Greetings</h3>
+          </mat-card-title>
+          <mat-card-content fxLayoutAlign="center">
+            <form class="example-form">
+                <mat-form-field class="example-full-width">
+                  <input type="text" placeholder="Enter your city" aria-label="City" matInput>
+                </mat-form-field>
+              </form>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <br>
+    
+      <div class="container">
+          <div class="container">
+            <div fxLayout="column" fxLayoutGap="20px" fxLayout.gt-md="row"  fxLayoutAlign="space-around center" class="content">
+                <div class="blocks">
+                    <button mat-raised-button color="accent" (click)="toQuizzes()">
+                        <mat-icon>arrow_left</mat-icon> Back
+                    </button>
+                </div>
+          </div>
+      </div>
+    <br>
+</div>
