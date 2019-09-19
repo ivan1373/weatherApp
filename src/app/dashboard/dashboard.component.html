@@ -10,21 +10,15 @@
                 <mat-form-field class="example-full-width">
                   <input type="text" placeholder="Enter your city" aria-label="City" matInput>
                 </mat-form-field>
-              </form>
+                <div fxLayoutAlign="center">
+                    <div class="blocks">
+                        <button type="submit" mat-flat-button color="accent">
+                            <mat-icon>check</mat-icon>
+                        </button>
+                    </div>
+                </div>
+            </form>
           </mat-card-content>
         </mat-card>
       </div>
-      <br>
-    
-      <div class="container">
-          <div class="container">
-            <div fxLayout="column" fxLayoutGap="20px" fxLayout.gt-md="row"  fxLayoutAlign="space-around center" class="content">
-                <div class="blocks">
-                    <button mat-raised-button color="accent" (click)="toQuizzes()">
-                        <mat-icon>arrow_left</mat-icon> Back
-                    </button>
-                </div>
-          </div>
-      </div>
-    <br>
 </div>
