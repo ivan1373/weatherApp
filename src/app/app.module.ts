@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material/material.module';
@@ -14,6 +16,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { WeatherComponent } from './dashboard/weather/weather.component';
 
 const appRoutes: Routes = [
   { path: '', component: DashboardComponent}
@@ -23,7 +26,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     NavbarComponent,
-    DashboardComponent
+    DashboardComponent,
+    WeatherComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +40,10 @@ const appRoutes: Routes = [
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

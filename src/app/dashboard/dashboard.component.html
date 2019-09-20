@@ -6,14 +6,14 @@
             <h3>Greetings</h3>
           </mat-card-title>
           <mat-card-content fxLayoutAlign="center">
-            <form class="example-form">
+            <form class="example-form" [formGroup]="cityForm" (ngSubmit)="getWeather()">
                 <mat-form-field class="example-full-width">
-                  <input type="text" placeholder="Enter your city" aria-label="City" matInput>
+                  <input type="text" placeholder="Enter your city" aria-label="City" formControlName="cityName" matInput>
                 </mat-form-field>
                 <div fxLayoutAlign="center">
                     <div class="blocks">
                         <button type="submit" mat-flat-button color="accent">
-                            <mat-icon>check</mat-icon>
+                            <mat-icon>search</mat-icon>
                         </button>
                     </div>
                 </div>
@@ -21,4 +21,5 @@
           </mat-card-content>
         </mat-card>
       </div>
+      <app-weather *ngIf="data" [data]="data"></app-weather>
 </div>
