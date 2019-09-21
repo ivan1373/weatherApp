@@ -1,6 +1,6 @@
 <div>
     <br>
-    <div fxLayout="row" fxLayoutAlign="center center" class="content">
+    <div fxLayout="row" fxLayoutAlign="center">
         <mat-card class="card" >
           <mat-card-title fxLayoutAlign="center" fxLayout.gt-xs="row" fxLayout.xs="column">
             <h3>Greetings</h3>
@@ -21,5 +21,7 @@
           </mat-card-content>
         </mat-card>
       </div>
-      <app-weather *ngIf="data" [data]="data"></app-weather>
+      <div *ngIf="data" fxLayoutAlign="center">
+        <app-weather [data]="data"></app-weather>
+      </div>
 </div>

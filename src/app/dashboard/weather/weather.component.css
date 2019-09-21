@@ -1,0 +1,14 @@
+/*.example-header-image {
+    background-image: url('https://linplayground.files.wordpress.com/2015/04/free-vector-sun-vector_002563_4.jpg');
+    background-size: cover;
+  }*/
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+
+  mat-card-title-group {
+    padding-right: 35px;
+  }
+  

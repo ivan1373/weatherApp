@@ -28,7 +28,8 @@ export class DashboardComponent implements OnInit {
 
   getWeather() {
     this.wService.getWeatherByName(this.f.cityName.value).subscribe(
-      data => this.data = data
+      data => {this.data = data;
+      console.log(data)}
     )
   }
 
