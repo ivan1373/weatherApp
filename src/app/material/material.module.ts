@@ -10,13 +10,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-import {MatTableModule} from '@angular/material/table';
 //import {MatPaginator} from '@angular/material/paginator';
-import {MatDialogModule} from '@angular/material/dialog';
-import {MatRadioModule} from '@angular/material/radio';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
-import {MatStepperModule} from '@angular/material/stepper';
 
 
 @NgModule({
@@ -34,13 +29,8 @@ import {MatStepperModule} from '@angular/material/stepper';
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
-    MatProgressSpinnerModule,
-    MatTableModule,
     //MatPaginator
-    MatDialogModule,
-    MatRadioModule,
     MatSnackBarModule,
-    MatStepperModule
   ]
 })
 export class MaterialModule { }
