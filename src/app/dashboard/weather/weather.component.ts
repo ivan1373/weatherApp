@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { ImageComponent } from './image/image.component';
+
 
 @Component({
   selector: 'app-weather',

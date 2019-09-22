@@ -18,6 +18,7 @@ import { MatListModule } from '@angular/material/list';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { WeatherComponent } from './dashboard/weather/weather.component';
 import { HttpErrorInterceptor } from './interceptors/http-error.interceptor';
+import { ImageComponent } from './dashboard/weather/image/image.component';
 
 const appRoutes: Routes = [
   { path: '', component: DashboardComponent}
@@ -28,7 +29,8 @@ const appRoutes: Routes = [
     AppComponent,
     NavbarComponent,
     DashboardComponent,
-    WeatherComponent
+    WeatherComponent,
+    ImageComponent
   ],
   imports: [
     BrowserModule,

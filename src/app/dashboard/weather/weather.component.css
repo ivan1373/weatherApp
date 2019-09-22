@@ -2,6 +2,11 @@
     background-image: url('https://linplayground.files.wordpress.com/2015/04/free-vector-sun-vector_002563_4.jpg');
     background-size: cover;
   }*/
+
+  *, :not(mat-icon) {
+    font-family: 'Poppins', sans-serif;
+  }
+
   .card-container {
     display: flex;
     justify-content: space-between;

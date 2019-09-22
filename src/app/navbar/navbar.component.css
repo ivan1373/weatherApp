@@ -19,10 +19,13 @@
 #title {
   color:white;
   font-weight: bold;
+  font-family: 'Poppins', sans-serif;
 }
 
 .hidden { 
   display : none;
+  font-family: 'Poppins', sans-serif;
 }
+
 
 
