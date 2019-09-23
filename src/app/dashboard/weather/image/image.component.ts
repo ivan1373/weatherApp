@@ -45,7 +45,7 @@ export class ImageComponent implements OnInit {
       }
       else
       {
-        this.imgPath = './assets/weather/Moon.png';
+        this.imgPath = './assets/weather/moon.png';
       }
     }
     else if(this.weatherGroup > 800)
