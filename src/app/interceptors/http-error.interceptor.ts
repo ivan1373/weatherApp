@@ -8,8 +8,15 @@ import {
    } from '@angular/common/http';
    import { Observable, throwError } from 'rxjs';
    import { retry, catchError } from 'rxjs/operators';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { Injectable } from '@angular/core';
+
+@Injectable()
    
    export class HttpErrorInterceptor implements HttpInterceptor {
+    constructor(
+      private _snackBar: MatSnackBar) { }
+
     intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
       return next.handle(request)
         .pipe(
@@ -21,10 +28,14 @@ import {
               errorMessage = `Error: ${error.error.message}`;
             } else {
               // server-side error
-              errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
+              errorMessage = 'No data for entered city! Please, try another one.'
+              //errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
             }
             
-            window.alert(errorMessage);
+           // window.alert(errorMessage);
+            this._snackBar.open(errorMessage,'',{
+              duration: 3000
+            });
             return throwError(errorMessage);
           })
         )
